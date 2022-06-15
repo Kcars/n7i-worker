@@ -1,19 +1,18 @@
 {
-  "name": "youtube",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "redis": "^4.1.0",
+    "rss-parser": "^3.12.0",
+    "twitter": "^1.7.1"
+  },
+  "name": "n7i-worker",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "main": "ChannelWorker.js",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@google-cloud/logging": "^5.5.5",
-    "@google-cloud/storage": "^2.5.0",
-    "@microlink/youtube-dl": "^1.13.2",
-    "redis": "^2.8.0",
-    "request": "^2.88.0",
-    "rss-parser": "^3.7.2"
-  }
+  "description": ""
 }
