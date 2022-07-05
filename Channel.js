@@ -104,7 +104,7 @@ const channelList = [
     { "lang": "jp", "channel_id": "UCuvk5PilcvDECU7dDZhQiEw", "display_name": "白雪巴", "channel_name": "白雪 巴/Shirayuki Tomoe", "color": "#6E3FE7" },
     { "lang": "jp", "channel_id": "UC1QgXt46-GEvtNjEC1paHnw", "display_name": "グウェル・オス・ガール", "channel_name": "グウェル・オス・ガール / Gwelu Os Gar 【にじさんじ】", "color": "#F04B2D" },
     //
-    { "lang": "jp", "channel_id": "UCfki3lMEF6SGBFiFfo9kvUA", "display_name": "ましろ", "channel_name": "ましろ / Mashiro", "color": "#1E2232" },
+    { "lang": "jp", "channel_id": "UCS-XXTgVkotkbkDnGEprXpg", "display_name": "ましろ", "channel_name": "ましろ / Mashiro", "color": "#1E2232" },
     { "lang": "jp", "channel_id": "UC-o-E6I3IC2q8sAoAuM6Umg", "display_name": "奈羅花", "channel_name": "奈羅花 - Naraka -", "color": "#A02655" },
     { "lang": "jp", "channel_id": "UCRcLAVTbmx2-iNcXSsupdNA", "display_name": "来栖夏芽", "channel_name": "来栖 夏芽-kurusu natsume-【にじさんじ】", "color": "#880223" },
     //
