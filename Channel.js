@@ -134,6 +134,11 @@ const channelList = [
     //
     { "lang": "jp", "channel_id": "UCgIfLpQvelloDi8I0Ycbwpg", "display_name": "壱百満天原サロメ", "channel_name": "壱百満天原サロメ / Hyakumantenbara Salome", "color": "#CD3796" },
     //
+    { "lang": "jp", "channel_id": "UCC7rRD6P7RQcx0hKv9RQP4w", "display_name": "風楽奏斗", "channel_name": "風楽奏斗 / Fura Kanato", "color": "#ffffff" },
+    { "lang": "jp", "channel_id": "UC4l9gz3q65lTBFfFtW5LLeA", "display_name": "渡会雲雀", "channel_name": "渡会雲雀 / Watarai Hibari", "color": "#ffffff" },
+    { "lang": "jp", "channel_id": "UCcDDxnoQcezyTUzHg5uHaKg", "display_name": "四季凪アキラ", "channel_name": "四季凪アキラ / Shikinagi Akira", "color": "#ffffff" },
+    { "lang": "jp", "channel_id": "UC5dJFf4m-mEcoyJRfhBljoA", "display_name": "セラフ・ダズルガーデン", "channel_name": "セラフ・ダズルガーデン / Seraph Dazzlegarden", "color": "#ffffff" },
+    //
     { "lang": "id", "channel_id": "UCZ5dNZsqBjBzbBl0l_IdmXg", "display_name": "Taka Radjiman", "channel_name": "Taka Radjiman【NIJISANJI / にじさんじ】", "color": "#303764" },
     { "lang": "id", "channel_id": "UCA3WE2WRSpoIvtnoVGq4VAw", "display_name": "ZEA Cornelia", "channel_name": "ZEA Cornelia【NIJISANJI】", "color": "#FBEC5D" },
     { "lang": "id", "channel_id": "UCpJtk0myFr5WnyfsmnInP-w", "display_name": "Hana Macchia", "channel_name": "Hana Macchia Ch.【NIJISANJI・にじさんじ】", "color": "#FFEFD5" },
