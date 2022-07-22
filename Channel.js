@@ -134,10 +134,10 @@ const channelList = [
     //
     { "lang": "jp", "channel_id": "UCgIfLpQvelloDi8I0Ycbwpg", "display_name": "壱百満天原サロメ", "channel_name": "壱百満天原サロメ / Hyakumantenbara Salome", "color": "#CD3796" },
     //
-    { "lang": "jp", "channel_id": "UCC7rRD6P7RQcx0hKv9RQP4w", "display_name": "風楽奏斗", "channel_name": "風楽奏斗 / Fura Kanato", "color": "#ffffff" },
-    { "lang": "jp", "channel_id": "UC4l9gz3q65lTBFfFtW5LLeA", "display_name": "渡会雲雀", "channel_name": "渡会雲雀 / Watarai Hibari", "color": "#ffffff" },
-    { "lang": "jp", "channel_id": "UCcDDxnoQcezyTUzHg5uHaKg", "display_name": "四季凪アキラ", "channel_name": "四季凪アキラ / Shikinagi Akira", "color": "#ffffff" },
-    { "lang": "jp", "channel_id": "UC5dJFf4m-mEcoyJRfhBljoA", "display_name": "セラフ・ダズルガーデン", "channel_name": "セラフ・ダズルガーデン / Seraph Dazzlegarden", "color": "#ffffff" },
+    { "lang": "jp", "channel_id": "UCC7rRD6P7RQcx0hKv9RQP4w", "display_name": "風楽奏斗", "channel_name": "風楽奏斗 / Fura Kanato", "color": "#FAD246" },
+    { "lang": "jp", "channel_id": "UC4l9gz3q65lTBFfFtW5LLeA", "display_name": "渡会雲雀", "channel_name": "渡会雲雀 / Watarai Hibari", "color": "#192332" },
+    { "lang": "jp", "channel_id": "UCcDDxnoQcezyTUzHg5uHaKg", "display_name": "四季凪アキラ", "channel_name": "四季凪アキラ / Shikinagi Akira", "color": "#235AAA" },
+    { "lang": "jp", "channel_id": "UC5dJFf4m-mEcoyJRfhBljoA", "display_name": "セラフ・ダズルガーデン", "channel_name": "セラフ・ダズルガーデン / Seraph Dazzlegarden", "color": "#DC3C41" },
     //
     { "lang": "id", "channel_id": "UCZ5dNZsqBjBzbBl0l_IdmXg", "display_name": "Taka Radjiman", "channel_name": "Taka Radjiman【NIJISANJI / にじさんじ】", "color": "#303764" },
     { "lang": "id", "channel_id": "UCA3WE2WRSpoIvtnoVGq4VAw", "display_name": "ZEA Cornelia", "channel_name": "ZEA Cornelia【NIJISANJI】", "color": "#FBEC5D" },
@@ -193,7 +193,14 @@ const channelList = [
     { "lang": "en", "channel_id": "UCGhqxhovNfaPBpxfCruy9EA", "display_name": "Fulgur Ovid", "channel_name": "Fulgur Ovid 【NIJISANJI EN】", "color": "#FF0000" },
     { "lang": "en", "channel_id": "UCuuAb_72QzK0M1USPMEl1yw", "display_name": "Sonny Brisko", "channel_name": "Sonny Brisko 【NIJISANJI EN】", "color": "#FFF321" },
     { "lang": "en", "channel_id": "UChJ5FTsHOu72_5OVx0rvsvQ", "display_name": "Uki Violeta", "channel_name": "Uki Violeta 【NIJISANJI EN】", "color": "#B600FF" },
-
+    //
+    { "lang": "en", "channel_id": "UCsb-1aJgiJXJH2feV-zlZRw", "display_name": "Kyo Kaneko", "channel_name": "Kyo Kaneko 【NIJISANJI EN】", "color": "#ffffff" },
+    { "lang": "en", "channel_id": "UCwaS8_S7kMiKA3izlTWHbQg", "display_name": "Maria Marionette", "channel_name": "Maria Marionette 【NIJISANJI EN】", "color": "#ffffff" },
+    { "lang": "en", "channel_id": "UCpzxZW5kghGnO5TmAFJQAVw", "display_name": "Aster Arcadia", "channel_name": "Aster Arcadia 【NIJISANJI EN】", "color": "#ffffff" },
+    { "lang": "en", "channel_id": "UCN68LoM3khS4gdBMiWJO8WA", "display_name": "Aia Amare", "channel_name": "Aia Amare 【NIJISANJI EN】", "color": "#ffffff" },
+    { "lang": "en", "channel_id": "UCKu59gTZ_rdEmerdx5rV4Yg", "display_name": "Ren Zotto", "channel_name": "Ren Zotto 【NIJISANJI EN】", "color": "#ffffff" },
+    { "lang": "en", "channel_id": "UCFgXWZOUZA2oYHNr6qDmsTQ", "display_name": "Scarle Yonaguni", "channel_name": "Scarle Yonaguni 【NIJISANJI EN】", "color": "#ffffff" },
+ 
 ];
 
 exports.channelList = channelList;
