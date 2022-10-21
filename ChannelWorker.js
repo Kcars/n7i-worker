@@ -59,7 +59,11 @@ const run = async () => {
         let queues = tools.getChunkArray(lastVideoIds, 40);
 
         for (queue of queues) {
-            await tools.parseVideoByIds(queue);
+            try {
+                await tools.parseVideoByIds(queue);
+            } catch(err) {
+                console.log('tools.parseVideoByIds failed.');
+            }
         }
 
         await tools.writeVideoJson();
