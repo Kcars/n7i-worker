@@ -1,7 +1,8 @@
 const channel = require("./Channel");
 
 const rss = require("./libs/RSSLoader");
-const itsukara = require("./libs/ITsukaraLoader");
+//const itsukara = require("./libs/ITsukaraLoader");
+const nijisanji = require("./libs/ITsukaraLoader");
 const twitter = require("./libs/TwitterLoader");
 
 const tools = require("./libs/Tools");
@@ -13,15 +14,26 @@ const run = async () => {
     let mm = dd.getMinutes();
     let ss = dd.getSeconds();
 
-    let oldVideoIds = await tools.getCurrentNotRecordVideoIds();
+    let oldVideoIds = [];
     let lastVideoIds = [];
     let videoIds = [];
 
     let logIds = [];
 
+    try {
+        await tools.getCurrentNotRecordVideoIds();
+    } catch(err) {
+        console.log('tools.getCurrentNotRecordVideoIds failed.');
+    }
+
     // 每五分鐘
     if (mm % 5 == 0 && ss == 0) {
-        videoIds = await rss.getVideoIds(channelIds);
+        try {
+            videoIds = await rss.getVideoIds(channelIds);
+        } catch(err) {
+            console.log('rss.getVideoIds failed.');
+        }
+
         lastVideoIds = lastVideoIds.concat(videoIds);
 
         logIds.push(lastVideoIds.length);
@@ -29,7 +41,12 @@ const run = async () => {
 
     // 每三分鐘
     if (mm % 3 == 0 && ss == 0) {
-        videoIds = await itsukara.getVideoIds();
+        try {
+            videoIds = await nijisanji.getVideoIds();
+        } catch(err) {
+            console.log('itsukara.getVideoIds failed.');
+        }
+        
         lastVideoIds = lastVideoIds.concat(videoIds);
 
         logIds.push(lastVideoIds.length);
@@ -37,7 +54,12 @@ const run = async () => {
 
     // 每二分鐘
     if (mm % 2 == 0 && ss == 0) {
-        videoIds = await twitter.getVideoIds();
+        try {
+            videoIds = await twitter.getVideoIds();
+        } catch(err) {
+            console.log('twitter.getVideoIds failed.');
+        }
+        
         lastVideoIds = lastVideoIds.concat(videoIds);
 
         logIds.push(lastVideoIds.length);
@@ -49,7 +71,12 @@ const run = async () => {
         logIds.push(lastVideoIds.length);
     }
 
-    lastVideoIds = await tools.getNotRecordVideoIds(lastVideoIds);
+    try {
+        lastVideoIds = await tools.getNotRecordVideoIds(lastVideoIds);
+    } catch(err) {
+        console.log('tools.getNotRecordVideoIds failed.');
+    }
+    
     logIds.push(lastVideoIds.length);
 
     lastVideoIds = [...new Set(lastVideoIds)];
@@ -66,7 +93,12 @@ const run = async () => {
             }
         }
 
-        await tools.writeVideoJson();
+        try {
+            await tools.writeVideoJson();
+        } catch(err) {
+            console.log('tools.writeVideoJson failed.');
+        }
+        
 
         console.log(`mm: ${mm} , ss: ${ss} , lastVideoIds.len: ${lastVideoIds.length} , queues end.`);
     }
