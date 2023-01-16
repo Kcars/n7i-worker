@@ -142,7 +142,7 @@ const channelList = [
     { "lang": "jp", "channel_id": "UCu-rV2gPtJ-CsGxe71z_BrQ", "display_name": "五十嵐梨花", "channel_name": "五十嵐梨花 / Igarashi Rika 【にじさんじ】", "color": "#FF8C3C" },
     { "lang": "jp", "channel_id": "UCUP8TmlO7NNra88AMqGU_vQ", "display_name": "小清水透", "channel_name": "小清水 透 / Koshimizu Toru【にじさんじ】", "color": "#CDA5FF" },
     { "lang": "jp", "channel_id": "UCtLfA_qUqCJtjXJM2ZR_keg", "display_name": "石神のぞみ", "channel_name": "石神のぞみ / Ishigami Nozomi【にじさんじ】", "color": "#E6325F" },
-    { "lang": "jp", "channel_id": "UCivwPlOp0ojnMPZj5pNOPPA", "display_name": "ソフィア・ヴァレンタイン", "channel_name": "ソフィア・ヴァレンタイン / Sophia Valentine【にじさんじ】", "color": "#FFFFFF" },
+    { "lang": "jp", "channel_id": "UCivwPlOp0ojnMPZj5pNOPPA", "display_name": "ソフィア・ヴァレンタイン", "channel_name": "ソフィア・ヴァレンタイン / Sophia Valentine【にじさんじ】", "color": "#C8C3DC" },
     { "lang": "jp", "channel_id": "UCiA-trSZfB0i92V_-dyDqBw", "display_name": "倉持めると", "channel_name": "倉持めると / Kuramochi Meruto【にじさんじ】", "color": "#EB4682" },
     { "lang": "jp", "channel_id": "UClrQ7xhRBxS_v_-WuudGKmA", "display_name": "鏑木ろこ", "channel_name": "鏑木ろこ / Kaburaki Roco【にじさんじ】", "color": "#198CAA" },
     { "lang": "jp", "channel_id": "UCWRPqA0ehhWV4Hnp27PJCkQ", "display_name": "獅子堂あかり", "channel_name": "獅子堂 あかり / Shishido Akari【にじさんじ】", "color": "#FFD728" }, 
