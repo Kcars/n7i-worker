@@ -8,7 +8,7 @@ const run = async () => {
     let videoList = await tools.getVideoHashList('live');
     let liveVideoCount = videoList.length;
 
-    for (video of videoList) {
+    for (const video of videoList) {
         let videoId = video.id;
         let liveViewCount = video.live_view_count; // 由於API呼叫額度問題 所以打算用線上人數決定呼叫間隔
         let delay = video.delay == null ? 0 : video.delay - 1;
@@ -22,15 +22,19 @@ const run = async () => {
                 let newToken = chatInfo.nextPageToken;
                 let newDelay = 60; // 預設每分鐘
 
-                newDelay = liveViewCount > 5000 ? 30 : newDelay; // 超過五千人則每三十秒
-                newDelay = liveViewCount > 10000 ? 15 : newDelay; // 超過萬人則每十秒
+                //newDelay = liveViewCount > 5000 ? 60 : newDelay; // 超過五千人則每三十秒
+                //newDelay = liveViewCount > 10000 ? 30 : newDelay; // 超過萬人則每十秒
 
-                newDelay = liveVideoCount > 50 ? 60 : newDelay; // 同時直播數超過N的時候改成固定每分鐘呼叫一次
+                newDelay = chatInfo.itemCount > 150 ? 30 : newDelay ;
+
+                newDelay = liveVideoCount > 20 ? 60 : newDelay; // 同時直播數超過N的時候改成固定每分鐘呼叫一次
+
+                // 202212 調整用回傳訊息數決定間隔
 
                 await tools.incrVideoHash(videoId, 'delay', newDelay);
                 await tools.setVideoHash(videoId, 'token', newToken);
 
-                console.log(`videoId: ${videoId} , play_time: ${video.play_time} , online: ${video.live_view_count} , newDelay: ${newDelay} , itemCount: ${chatInfo.itemCount} , totalNewSponsor: ${chatInfo.totalNewSponsor} , totalAmountMicros: ${chatInfo.totalAmountMicros}`);
+                console.log(`[${liveVideoCount}] videoId: ${videoId} , play_time: ${video.play_time} , online: ${video.live_view_count} , newDelay: ${newDelay} , itemCount: ${chatInfo.itemCount} , totalNewSponsor: ${chatInfo.totalNewSponsor} , totalAmountMicros: ${chatInfo.totalAmountMicros}`);
             } else {
                 if (chatInfo.errReason == 'forbidden') { // 會限
                     await tools.setVideoHash(videoId, 'is_private', 'y');
@@ -46,6 +50,7 @@ const run = async () => {
                 console.log(`[WARN] videoId: ${videoId} , errReason: ${chatInfo.errReason}`);
             }
         } else {
+            //console.log(`[DEBUG] ${videoId}.delay: ${delay}`);
             // 每秒遞減delay值
             await tools.incrVideoHash(videoId, 'delay', -1);
         }
@@ -53,4 +58,4 @@ const run = async () => {
 }
 
 setInterval(run, 1000);
-run();
+//run();
