@@ -1,5 +1,6 @@
 // channel_name只是編輯時確認用
 // 不另外放json檔是想要寫註解
+// keyword: browse_id
 const channelList = [
 
     { "lang": "jp", "channel_id": "UCX7YkU9nEeaoZbkVLVajcMg", "display_name": "にじさんじ", "channel_name": "にじさんじ", "color": "#FFFFFF" },
@@ -137,6 +138,14 @@ const channelList = [
     { "lang": "jp", "channel_id": "UC4l9gz3q65lTBFfFtW5LLeA", "display_name": "渡会雲雀", "channel_name": "渡会雲雀 / Watarai Hibari", "color": "#192332" },
     { "lang": "jp", "channel_id": "UCcDDxnoQcezyTUzHg5uHaKg", "display_name": "四季凪アキラ", "channel_name": "四季凪アキラ / Shikinagi Akira", "color": "#235AAA" },
     { "lang": "jp", "channel_id": "UC5dJFf4m-mEcoyJRfhBljoA", "display_name": "セラフ・ダズルガーデン", "channel_name": "セラフ・ダズルガーデン / Seraph Dazzlegarden", "color": "#DC3C41" },
+    //
+    { "lang": "jp", "channel_id": "UCu-rV2gPtJ-CsGxe71z_BrQ", "display_name": "五十嵐梨花", "channel_name": "五十嵐梨花 / Igarashi Rika 【にじさんじ】", "color": "#FF8C3C" },
+    { "lang": "jp", "channel_id": "UCUP8TmlO7NNra88AMqGU_vQ", "display_name": "小清水透", "channel_name": "小清水 透 / Koshimizu Toru【にじさんじ】", "color": "#CDA5FF" },
+    { "lang": "jp", "channel_id": "UCtLfA_qUqCJtjXJM2ZR_keg", "display_name": "石神のぞみ", "channel_name": "石神のぞみ / Ishigami Nozomi【にじさんじ】", "color": "#E6325F" },
+    { "lang": "jp", "channel_id": "UCivwPlOp0ojnMPZj5pNOPPA", "display_name": "ソフィア・ヴァレンタイン", "channel_name": "ソフィア・ヴァレンタイン / Sophia Valentine【にじさんじ】", "color": "#FFFFFF" },
+    { "lang": "jp", "channel_id": "UCiA-trSZfB0i92V_-dyDqBw", "display_name": "倉持めると", "channel_name": "倉持めると / Kuramochi Meruto【にじさんじ】", "color": "#EB4682" },
+    { "lang": "jp", "channel_id": "UClrQ7xhRBxS_v_-WuudGKmA", "display_name": "鏑木ろこ", "channel_name": "鏑木ろこ / Kaburaki Roco【にじさんじ】", "color": "#198CAA" },
+    { "lang": "jp", "channel_id": "UCWRPqA0ehhWV4Hnp27PJCkQ", "display_name": "獅子堂あかり", "channel_name": "獅子堂 あかり / Shishido Akari【にじさんじ】", "color": "#FFD728" }, 
     //
     { "lang": "id", "channel_id": "UCZ5dNZsqBjBzbBl0l_IdmXg", "display_name": "Taka Radjiman", "channel_name": "Taka Radjiman【NIJISANJI / にじさんじ】", "color": "#303764" },
     { "lang": "id", "channel_id": "UCA3WE2WRSpoIvtnoVGq4VAw", "display_name": "ZEA Cornelia", "channel_name": "ZEA Cornelia【NIJISANJI】", "color": "#FBEC5D" },
