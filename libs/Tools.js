@@ -69,12 +69,15 @@ const parseVideo = async (video) => {
         let liveViewCount = video.liveStreamingDetails != null && video.liveStreamingDetails.concurrentViewers != null ? video.liveStreamingDetails.concurrentViewers : 0;
 
         let key = `${prefix}:live:${videoId}`;
+        let item = await client.HGETALL(`${key}`);
 
-        if (videoStatus == 'none') {
+        let is_private = item != null && item.is_private == 'y' ? 'y' : 'n';
+
+        if (videoStatus == 'none' || is_private == 'y') {
             let yyyy = new Date(startTime).getFullYear();
             let mm = new Date(startTime).getMonth() + 1;
 
-            let item = await client.HGETALL(`${key}`);
+            //let item = await client.HGETALL(`${key}`);
 
             if (Object.keys(item).length > 0) {
                 let item_str = `${JSON.stringify(item)}\r\n`;
@@ -124,14 +127,33 @@ const parseVideo = async (video) => {
             await client.HSET(`${key}`, 'live_sch_time', schTime);
             await client.HSET(`${key}`, 'live_start_time', startTime);
             await client.HSET(`${key}`, 'live_view_count', liveViewCount);
+
             await client.HSET(`${key}`, 'play_time', playTime);
 
+            await client.HSET(`${key}`, 'update_time', new Date().getTime());
+
+            // default value 0
             await client.HINCRBY(`${key}`, 'new_sponsor', 0);
             await client.HINCRBY(`${key}`, 'amount_micros', 0);
             await client.HINCRBY(`${key}`, 'chat', 0);
             await client.HINCRBY(`${key}`, 'chat_total', 0);
 
             await client.HINCRBY(`${key}`, 'delay', 0);
+
+            //if ( ['PV1t4YSEDlo'].indexOf(videoId) != -1) {
+            if (videoId == 'PV1t4YSEDlo') {
+                console.log('***** upcoming id in.');
+            }
+            /*if (item != null ) {
+                let old_play_time = item.play_time ;
+                
+                await client.HSET(`${key}` , 'old_play_time' , old_play_time);
+
+                if(old_play_time == playTime) {
+                    console.log(`[WARN] videoId: ${videoId} maybe break.`);
+                    await client.HINCRBY(`${key}`, 'live_break', 1); ;
+                }
+            }*/
         }
     } else {
         //console.log(`${channelId} not in channelList.`);
@@ -145,10 +167,24 @@ const getVideoHashList = async (status) => {
     for (const key of keys) {
         if (key != `${prefix}:live:ids`) {
             let item = await client.HGETALL(key);
+            let itemStatus = item.status;
+            let itemUpdateTime = item.update_time != null ? item.update_time : 0;
+            let nowTime = new Date().getTime();
+            let diffTime = nowTime - itemUpdateTime;
+            let maybeDown = diffTime >= 1000 * 60 * 5;
 
-            if (item.status != null && item.status != '' && item.status == status) {
+
+            if (itemStatus != null && itemStatus != '' && itemStatus == status) {
                 item.play_time = item.play_time == null ? '00:00:00' : item.play_time;
-                output.push(item);
+                //output.push(item);
+
+                if (status == 'live' && maybeDown) {
+                    // append to record?
+                    await client.DEL(`${prefix}:live:${item.id}`);
+                    console.log(`[WARN] videoId: ${item.id} maybe down.`);
+                } else {
+                    output.push(item);
+                }
             }
         }
     }
@@ -408,7 +444,7 @@ const parseLiveChatMessage = async (video, item) => {
                 let mm = new Date().getMonth() + 1;
 
                 mm = mm < 10 ? `0${mm}` : mm;
-                
+
                 try {
                     output = {
                         to_channel_id: video.channel_id,
@@ -436,6 +472,8 @@ const parseLiveChatMessage = async (video, item) => {
             }
 
             resolve({ is_new_sponsor, amount_micros });
+        } else {
+            resolve({ is_new_sponsor: 0, amount_micros: 0 });
         }
     })
 }
