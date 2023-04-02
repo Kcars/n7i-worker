@@ -147,6 +147,11 @@ const channelList = [
     { "lang": "jp", "channel_id": "UClrQ7xhRBxS_v_-WuudGKmA", "display_name": "鏑木ろこ", "channel_name": "鏑木ろこ / Kaburaki Roco【にじさんじ】", "color": "#198CAA" },
     { "lang": "jp", "channel_id": "UCWRPqA0ehhWV4Hnp27PJCkQ", "display_name": "獅子堂あかり", "channel_name": "獅子堂 あかり / Shishido Akari【にじさんじ】", "color": "#FFD728" }, 
     //
+    { "lang": "jp", "channel_id": "UCy8P3o5XlMpJGQY4WugzdNA", "display_name": "佐伯イッテツ", "channel_name": "佐伯イッテツ / Saiki Ittetsu【にじさんじ】", "color": "#8C4664" }, 
+    { "lang": "jp", "channel_id": "UC1vawzfbCnRpHT9SJ5pHlHw", "display_name": "赤城ウェン", "channel_name": "赤城ウェン / Akagi Wen【にじさんじ】", "color": "#FF8C9B" }, 
+    { "lang": "jp", "channel_id": "UCambvP8yxNDot4FzQc9cgiw", "display_name": "宇佐美リト", "channel_name": "宇佐美リト / Usami Rito【にじさんじ】", "color": "#FAC31E" }, 
+    { "lang": "jp", "channel_id": "UCqXxS-9x9Ha_UiH6hG4kh5Q", "display_name": "緋八マナ", "channel_name": "緋八マナ / Hibachi Mana【にじさんじ】", "color": "#64C8F0" }, 
+    //
     { "lang": "id", "channel_id": "UCZ5dNZsqBjBzbBl0l_IdmXg", "display_name": "Taka Radjiman", "channel_name": "Taka Radjiman【NIJISANJI / にじさんじ】", "color": "#303764" },
     { "lang": "id", "channel_id": "UCA3WE2WRSpoIvtnoVGq4VAw", "display_name": "ZEA Cornelia", "channel_name": "ZEA Cornelia【NIJISANJI】", "color": "#FBEC5D" },
     { "lang": "id", "channel_id": "UCpJtk0myFr5WnyfsmnInP-w", "display_name": "Hana Macchia", "channel_name": "Hana Macchia Ch.【NIJISANJI・にじさんじ】", "color": "#FFEFD5" },
