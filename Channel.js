@@ -152,6 +152,11 @@ const channelList = [
     { "lang": "jp", "channel_id": "UCambvP8yxNDot4FzQc9cgiw", "display_name": "宇佐美リト", "channel_name": "宇佐美リト / Usami Rito【にじさんじ】", "color": "#FAC31E" }, 
     { "lang": "jp", "channel_id": "UCqXxS-9x9Ha_UiH6hG4kh5Q", "display_name": "緋八マナ", "channel_name": "緋八マナ / Hibachi Mana【にじさんじ】", "color": "#64C8F0" }, 
     //
+    { "lang": "jp", "channel_id": "UChdY64fJb14Nfnbs8EGdQig", "display_name": "叢雲カゲツ", "channel_name": "叢雲カゲツ / Murakumo Kagetsu【にじさんじ】", "color": "#6EB487" }, 
+    { "lang": "jp", "channel_id": "UCgZ0pH7j6c9z-pkOG3PYw1Q", "display_name": "星導ショウ", "channel_name": "星導ショウ / Hoshirube Sho【にじさんじ】", "color": "#A58CDC" }, 
+    { "lang": "jp", "channel_id": "UC6WFKwYptsxVue56Lx218vg", "display_name": "小柳ロウ", "channel_name": "小柳ロウ / Koyanagi Rou【にじさんじ】", "color": "#5A5FAA" }, 
+    { "lang": "jp", "channel_id": "UCz89MGFBrAqwJ5xMr5weSuA", "display_name": "伊波ライ", "channel_name": "伊波ライ / Inami Rai【にじさんじ】", "color": "#DCFF50" },
+    //
     { "lang": "id", "channel_id": "UCZ5dNZsqBjBzbBl0l_IdmXg", "display_name": "Taka Radjiman", "channel_name": "Taka Radjiman【NIJISANJI / にじさんじ】", "color": "#303764" },
     { "lang": "id", "channel_id": "UCA3WE2WRSpoIvtnoVGq4VAw", "display_name": "ZEA Cornelia", "channel_name": "ZEA Cornelia【NIJISANJI】", "color": "#FBEC5D" },
     { "lang": "id", "channel_id": "UCpJtk0myFr5WnyfsmnInP-w", "display_name": "Hana Macchia", "channel_name": "Hana Macchia Ch.【NIJISANJI・にじさんじ】", "color": "#FFEFD5" },
@@ -200,7 +205,6 @@ const channelList = [
     { "lang": "en", "channel_id": "UC7Gb7Uawe20QyFibhLl1lzA", "display_name": "Luca Kaneshiro", "channel_name": "Luca Kaneshiro【NIJISANJI EN】", "color": "#D4AF37" },
     { "lang": "en", "channel_id": "UCG0rzBZV_QMP4MtWg6IjhEA", "display_name": "Shu Yamino", "channel_name": "Shu Yamino【NIJISANJI EN】", "color": "#A660A7" },
     { "lang": "en", "channel_id": "UCQ1zGxHrfEmmW4CPpBx9-qw", "display_name": "Alban Knox", "channel_name": "Alban Knox 【NIJISANJI EN】", "color": "#FF5F00" },
-    { "lang": "en", "channel_id": "UCSc_KzY_9WYAx9LghggjVRA", "display_name": "Yugo Asuma", "channel_name": "Yugo Asuma 【NIJISANJI EN】", "color": "#1F51FF" },
     { "lang": "en", "channel_id": "UCGhqxhovNfaPBpxfCruy9EA", "display_name": "Fulgur Ovid", "channel_name": "Fulgur Ovid 【NIJISANJI EN】", "color": "#FF0000" },
     { "lang": "en", "channel_id": "UCuuAb_72QzK0M1USPMEl1yw", "display_name": "Sonny Brisko", "channel_name": "Sonny Brisko 【NIJISANJI EN】", "color": "#FFF321" },
     { "lang": "en", "channel_id": "UChJ5FTsHOu72_5OVx0rvsvQ", "display_name": "Uki Violeta", "channel_name": "Uki Violeta 【NIJISANJI EN】", "color": "#B600FF" },
@@ -213,7 +217,6 @@ const channelList = [
     { "lang": "en", "channel_id": "UCFgXWZOUZA2oYHNr6qDmsTQ", "display_name": "Scarle Yonaguni", "channel_name": "Scarle Yonaguni 【NIJISANJI EN】", "color": "#E60012" },
     //
     { "lang": "en", "channel_id": "UCy91xBlY_Brh3bnHxKtjrrg", "display_name": "Doppio Dropscythe", "channel_name": "Doppio Dropscythe【NIJISANJI EN】", "color": "#A50082" },
-    { "lang": "en", "channel_id": "UCIairB9UMDvqSKfMdv1jmjg", "display_name": "Zaion LanZa", "channel_name": "Zaion LanZa【NIJISANJI EN】", "color": "#FFF462" },
     { "lang": "en", "channel_id": "UCz_ZRw6ak4Foy8zZy0kEprQ", "display_name": "Hex Haywire", "channel_name": "Hex Haywire【NIJISANJI EN】", "color": "#007199" },
     { "lang": "en", "channel_id": "UChKXd7oqD18qiIYBoRIHTlw", "display_name": "Meloco Kyoran", "channel_name": "Meloco Kyoran【NIJISANJI EN】", "color": "#A09BD8" },
     { "lang": "en", "channel_id": "UCO8WcDsF5znr-qsXlzZNpqg", "display_name": "Ver Vermillion ", "channel_name": "Ver Vermillion【NIJISANJI EN】", "color": "#D5345E" },
